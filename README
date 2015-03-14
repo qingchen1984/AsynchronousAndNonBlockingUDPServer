@@ -8,4 +8,8 @@ for a longer amount of time untill a certain send or receive is accomplished suc
 But using non blocking and asynchronous socket won't let that happen. Non blocking
 socket would allow the program to do other jobs without being blocked by some
 socket IO functions, whereas Asynchronous behavior will allow the program to
-take care of matters when needed i.e. when a send or recv returns successfully
+take care of matters when needed i.e. when a send or recv returns successfully.
+
+Made use of SIGPIPE signal. SIGPIPE signal will be delivered to the server program
+whenever a client would request connection to it. So untill and unless that signal
+is getting delivered the program can go about doing other jobs.
