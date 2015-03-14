@@ -3,7 +3,7 @@ An example of a UDP Server using non blocking and asynchronous I/O.
 Importance of such a server lies in the fact that in network communication
 sending or receiving messages over internet is a time consuming affair.
 If blocking I/O is used the program would have to wait idly and unfruitfully
-for a longer amount of time utill a certain send or receive is accomplished successfully.
+for a longer amount of time untill a certain send or receive is accomplished successfully.
 
 But using non blocking and asynchronous socket won't let that happen. Non blocking
 socket would allow the program to do other jobs without being blocked by some
